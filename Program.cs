@@ -32,7 +32,7 @@ class Compte
     }
 }
 class Program
-{
+{   
     static void Main(string[] args)
     {
         Compte c1 = new Compte() { numero = 1, nom = "feur", solde = 9999 };
@@ -51,7 +51,7 @@ class Program
 
         foreach (var compte in comptes)
         {
-            Console.WriteLine(compte.Afficher());
-        }
+            compte.Afficher();
+        };
     }
 }
