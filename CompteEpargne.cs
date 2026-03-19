@@ -135,5 +135,8 @@ class CompteEpargne
     {
         this.tauxInteret = tauxInteret;
         this.dateOuverture = dateOuverture;
+        this.numero = numero;
+        this.nom = nom;
+        this.solde = solde;
     }
 }

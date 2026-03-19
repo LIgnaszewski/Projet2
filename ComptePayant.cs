@@ -124,14 +124,13 @@ class ComptePayant
         return true;
     }
 
-    public ComptePayant(double commision)
-    {
-        this.commission = commision;
-    }
-
-    public ComptePayant()
+    public ComptePayant(double commision, int numero, string nom, double solde)
     {
         nombreOperation++;
+        this.commission = commision;
+        this.numero = numero;
+        this.nom = nom;
+        this.solde = solde;
     }
 
     public void Afficher()
