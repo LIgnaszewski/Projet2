@@ -5,18 +5,18 @@ class Program
 {
     static void Main()
     {
-        CompteEpargne ce1 = new CompteEpargne(0.04, "01/09/2024", 10, "Diane", 800);
+        Compte c1 = new Compte();
 
-        ce1.Crediter(100);
-        ce1.Debiter(200);
-        ce1.Debiter(800);
+        c1.SetNumero(20);
+        c1.SetNom("Farid");
+        c1.SetSolde(1500);
+
+        CompteEpargne ce1 = new CompteEpargne(0.03, "15/01/2024", 21, "Gina", 1000);
+
+        ComptePayant cp1 = new ComptePayant(3, 22, "Hugo", 700);
+
+        c1.Afficher();
         ce1.Afficher();
-
-        ComptePayant cp1 = new ComptePayant(2, 11, "Emma", 600);
-
-        cp1.Crediter(50);
-        cp1.Debiter(100);
-        cp1.Debiter(50);
         cp1.Afficher();
     }
 }

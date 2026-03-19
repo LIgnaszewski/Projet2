@@ -3,9 +3,9 @@ using System;
 
 class Compte
 {
-    private int numero;
-    private string nom;
-    private double solde;
+    protected int numero;
+    protected string nom;
+    protected double solde;
 
     public int GetNumero()
     {
