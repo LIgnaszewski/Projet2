@@ -37,5 +37,11 @@ class Program
         ce1.Afficher();
         cp1.Afficher();
         c1.Afficher();
+
+        // 1. Ca permet de gagnez du temps, avoir moins a refaire si on utilise les même systeme.
+        // 2. De réecrire des trop grosse partie de code qui a été déja faite.
+        // 3. Puisqu'il utilise un base solide déja existante
+        // 4. Que les base a savoir numéro, nom, solde.
+        // 5. Ils doivent contenir les compte qui sont approprié par exemple CompteEpargne ou ComptePayant.
     }
 }
